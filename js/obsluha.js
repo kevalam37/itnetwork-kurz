@@ -1,2 +1,2 @@
-const SeznamPojistencu = new SeznamPojistencu();
+const seznamPojistencu = new SeznamPojistencu();
 diar.vypisZaznamy();
