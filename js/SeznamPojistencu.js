@@ -1,0 +1,40 @@
+class SeznamPojistencu {
+	constructor(jazyk = "cs-CZ") {
+		this.zaznamy = [];
+		this.jazyk = jazyk;
+
+		this.jmenoInput = document.getElementById("jmeno");
+		this.prijmeniInput = document.getElementById("prijmeni");
+		this.telefonInput = document.getElementById("telefon");
+		this.vekInput = document.getElementById("vek");
+		this.datumInput = document.getElementById("datum");
+		this.potvrditButton = document.getElementById("potvrdit");
+		this.vypisElement = document.getElementById("seznam-pojistencu");
+
+		this.nastavUdalosti();
+	}
+
+	nastavUdalosti() {
+		this.potvrditButton.onclick = () => {
+			const zaznam = new Zaznam(this.jmenoInput.value, this.prijmeniInput.value, this.telefonInput.value, this.vekInput.value, this.datumInput.value);
+			this.zaznamy.push(zaznam);
+			this.vypisZaznamy();
+		};
+	}
+
+	vypisZaznamy() {
+		this.vypisElement.innerHTML = "";
+		for (let i = 0; i < this.zaznamy.length; i++) {
+			const zaznam = this.zaznamy[i];
+			this.vypisElement.innerHTML += `<table>
+			<tbody>
+			<td>${zaznam.jmeno}</td>
+			<td>${zaznam.prijmeni}</td>
+			<td>${zaznam.telefon}</td>
+			<td>${zaznam.vek}</td>
+			<td>${zaznam.datum}</td>
+			</tbody>
+			</table>`;
+		}
+	}
+}
