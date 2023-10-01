@@ -1,2 +1,2 @@
 const seznamPojistencu = new SeznamPojistencu();
-diar.vypisZaznamy();
+seznamPojistencu.vypisZaznamy();

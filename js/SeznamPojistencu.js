@@ -27,7 +27,7 @@ class SeznamPojistencu {
     	this.vypisElement.innerHTML = "";
     	for (let i = 0; i < this.zaznamy.length; i++) {
 		    const zaznam = this.zaznamy[i];
-		    this.vypisElement.innerHTML += `<h4>${zaznam.jmeno}</h4> <h4>${zaznam.prijmeni}</h4> <h4>${zaznam.telefon}</h4> <h4>${zaznam.vek}</h4> ${zaznam.datum} `;
+		    this.vypisElement.innerHTML += `${zaznam.jmeno} ${zaznam.prijmeni} ${zaznam.telefon} ${zaznam.vek} ${zaznam.datum} `;
 	    }
     }
     
