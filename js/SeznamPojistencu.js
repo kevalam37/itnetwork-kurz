@@ -23,13 +23,35 @@ class SeznamPojistencu {
 	    };
     }
 
+
+
     vypisZaznamy() {
-    	this.vypisElement.innerHTML = "";
+		const table = document.getElementById("data-table");
+		const row = table.insertRow();
+		const cell1 = row.insertCell(0);
+		const cell2 = row.insertCell(1);
+		const cell3 = row.insertCell(2);
+		const cell4 = row.insertCell(3);
+		const cell5 = row.insertCell(4);
+		
     	for (let i = 0; i < this.zaznamy.length; i++) {
-		    const zaznam = this.zaznamy[i];
-		    this.vypisElement.innerHTML += `${zaznam.jmeno} ${zaznam.prijmeni} ${zaznam.telefon} ${zaznam.vek} ${zaznam.datum} `;
+		const zaznam = this.zaznamy[i];
+		
+		
+		cell1.innerHTML = zaznam.jmeno;
+		cell2.innerHTML = zaznam.prijmeni;
+		cell3.innerHTML = zaznam.telefon;
+		cell4.innerHTML = zaznam.vek;
+		cell5.innerHTML = zaznam.datum;
 	    }
+	  
+
+	  
     }
+
+
+
+
     
 }
 
