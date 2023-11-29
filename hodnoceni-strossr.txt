@@ -1,0 +1,14 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Z názvu třídy Zaznam není patrné, co reprezentuje -> Pojistenec. Dvojjazyčný název zaznamyZeStorage a míchání anglických a českých názvů nebo proměnné cell1 - cell5. Tlačítko “Potvrdit úkol” z diáře by bylo dobré přejmenovat na “přidat pojištěnce”.
+2. Dodržení principů SRP a SoC - Třída `SeznamPojistencu` spravuje uživatelský vstup i data, což porušuje SRP. Uživatelské vstupy by měla zpracovávat třída uživatelského rozhraní, případně obsluha.js.
+3. Vhodný výběr datových typů - Ok.
+4. Formátování kódu - Metoda vypisZaznamy() je oproti předchozí metodě nastavUdalosti() jinak odsazena a oddělena třemi prázdnými řádky. Složené závorky na konci třídy SeznamPojistencu mají mezi sebou také příliš mezer. Před parametry konstruktoru třídy Zaznam je mezera. Konstruktor třídy SeznamPojistencu má první tři řádky více odsazené, než ostatní. V souboru index.html jsou některé inputy jednořádkové, jiné jsou rozepsané na více řádku, i když jsou podobně dlouhé.
+5. Duplicitní kód a nekonečné cykly - Nekonečné cykly ani duplicitní kód jsem v projektu nenašel.
+6. Validace vstupních dat - Validace dat zcela chybí.
+7. Logičnost a složitost - Funkce displayLocalStorage() není v projektu volána. Při opětovném spuštění aplikace vidím pouze naposledy uložený záznam.
+8. Komentáře - Komentářů je v kódu minimum, dokumentační komentáře chybí.
+9. Celkové hodnocení - Kód vyžaduje zlepšení v oblasti principů SRP a SoC, validace dat a komentování. Je dobré, že je rozdělen do více souborů, ale stále je třeba lépe oddělit logiku od prezentace. Formátování JavaScriptu by mělo být sjednocené a měla by být přidána validace vstupních dat. Bylo by dobré také aplikaci ostylovat.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
+
