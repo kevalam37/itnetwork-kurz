@@ -26,8 +26,6 @@ class SeznamPojistencu {
 	    };
     }
 
-	
-
 	vypisZaznamy() {
 		const table = document.getElementById("data-table");
 		const row = table.insertRow();
@@ -46,17 +44,7 @@ class SeznamPojistencu {
 		cell4.innerHTML = zaznam.vek;
 		cell5.innerHTML = zaznam.datum;
 	    }
-
-
-
     }
 
-	
-
-
-
-
-
-
-    
+	    
 }
